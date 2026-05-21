@@ -98,7 +98,7 @@ public class Interfaz {
         int estaciones       = leerEntero("Número de estaciones");
         boolean anteojos     = leerBooleano("Requiere anteojos? (s/n):");
 
-        //Completar para cumplir con el requerimiento
+        parque.agregarAtraccion(nombre, zona, capacidad, edadMinima, edadMinima, precio, estaciones, anteojos);
     }
 
     /**
@@ -114,7 +114,7 @@ public class Interfaz {
         int edadMaxima       = leerEntero("Edad máxima permitida (años): ");
         boolean supervision  = leerBooleano("Requiere supervisión personal? (s/n):");
 
-        //Completar para cumplir con el requerimiento
+        parque.agregarAtraccion(nombre, zona, capacidad, edadMinima, 0, precio, edadMaxima, supervision);
     }
 
     /**
@@ -131,7 +131,7 @@ public class Interfaz {
         boolean materialPeligroso    = leerBooleano("usa material peligroso? (s/n): ");
 
 
-        //Completar para cumplir con el requerimiento
+        parque.agregarAtraccion(nombre, zona, capacidad, edadMinima, precio, duracion, materialPeligroso);
     }
 
     /**

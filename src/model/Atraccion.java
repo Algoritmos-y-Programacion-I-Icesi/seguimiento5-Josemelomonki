@@ -3,7 +3,7 @@ package model;
 /**
  * Clase que representa una atraccion del parque MagicWorld.
  */
-public class Atraccion {
+public abstract class Atraccion {
 
     protected String nombre;
     protected String zonaUbicacion;
@@ -40,10 +40,10 @@ public class Atraccion {
                 "\nIngreso diario: $" + String.format("%,.2f", calcularIngresoDiario());
     }
 
-    public double calcularIngresoDiario(){
-        return 0;
-        //Completar para cumplir con el requerimiento
-    }
+    public abstract double calcularIngresoDiario();
+
+    public abstract boolean requiereMantenimiento();
+
 
     // Getters
     public void setVisitantesPorDia(int visitantes){visitantesPorDia = visitantes;}
