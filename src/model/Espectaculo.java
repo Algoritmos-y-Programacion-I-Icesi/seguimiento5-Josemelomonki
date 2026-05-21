@@ -31,6 +31,7 @@ public class Espectaculo extends Atraccion implements Clasificable {
         }
     }
 
+    @Override
     public String getNivelRiesgo() {
         if (materialPeligroso == true) {
             return "Alto";
@@ -41,6 +42,7 @@ public class Espectaculo extends Atraccion implements Clasificable {
         }
     }
 
+    @Override
     public String toString() {
         return super.toString() +
                 "\nMaterial peligroso: " + materialPeligroso +

@@ -47,7 +47,8 @@ public class Parque {
 
         Atraccion espectaculo = new Espectaculo(
                 "Tipo de espectaculo",
-                0, // duracionMinutos
+                0, 
+                false, // materialPeligroso
                 nombre,
                 zonaUbicacion,
                 capacidadMaxima,

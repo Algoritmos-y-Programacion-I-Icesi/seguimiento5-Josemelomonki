@@ -29,6 +29,8 @@ public class JuegoInfantil extends Atraccion {
             return false;
         }
     }
+
+    @Override
     public String toString() {
         return super.toString() +
                 "\nEdad maxima: " + edadMaxima +
