@@ -32,6 +32,7 @@ public class Simulador extends Atraccion implements Clasificable {
         }
     }
 
+    @Override
     public String getNivelRiesgo() {
         if (requiereAnteojos == true && numeroEstaciones > 20) {
             return "Alto";

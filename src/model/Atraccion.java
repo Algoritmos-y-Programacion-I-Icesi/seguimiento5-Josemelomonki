@@ -16,7 +16,7 @@ public abstract class Atraccion {
      * Constructor de la clase Atraccion
      */
     public Atraccion(String nombre, String zonaUbicacion, int capacidadMaxima,
-                     int edadMinimaAnios, int visitantesPorDia, double precioEntrada) {
+            int edadMinimaAnios, int visitantesPorDia, double precioEntrada) {
         this.nombre = nombre;
         this.zonaUbicacion = zonaUbicacion;
         this.capacidadMaxima = capacidadMaxima;
@@ -25,7 +25,7 @@ public abstract class Atraccion {
         this.precioEntrada = precioEntrada;
     }
 
-     /**
+    /**
      * Retorna una representacion en texto de la información de la atracción
      */
     @Override
@@ -44,13 +44,32 @@ public abstract class Atraccion {
 
     public abstract boolean requiereMantenimiento();
 
-
     // Getters
-    public void setVisitantesPorDia(int visitantes){visitantesPorDia = visitantes;}
-    public String getNombre() { return nombre; }
-    public String getZonaUbicacion() { return zonaUbicacion; }
-    public int getCapacidadMaxima() { return capacidadMaxima; }
-    public int getEdadMinimaAnios() { return edadMinimaAnios; }
-    public int getVisitantesPorDia() { return visitantesPorDia; }
-    public double getPrecioEntrada() { return precioEntrada; }
+    public void setVisitantesPorDia(int visitantes) {
+        visitantesPorDia = visitantes;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getZonaUbicacion() {
+        return zonaUbicacion;
+    }
+
+    public int getCapacidadMaxima() {
+        return capacidadMaxima;
+    }
+
+    public int getEdadMinimaAnios() {
+        return edadMinimaAnios;
+    }
+
+    public int getVisitantesPorDia() {
+        return visitantesPorDia;
+    }
+
+    public double getPrecioEntrada() {
+        return precioEntrada;
+    }
 }

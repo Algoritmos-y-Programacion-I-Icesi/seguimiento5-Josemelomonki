@@ -4,7 +4,8 @@ public class Espectaculo extends Atraccion implements Clasificable {
     private int duracionMinutos;
     private boolean materialPeligroso;
 
-    public Espectaculo(String tipoEspectaculo, int duracionMinutos, String nombre, String zonaUbicacion,
+    public Espectaculo(String tipoEspectaculo, int duracionMinutos, boolean materialPeligroso, String nombre,
+            String zonaUbicacion,
             int capacidadMaxima, int edadMinimaAnios, int visitantesPorDia, double precioEntrada) {
         super(nombre, zonaUbicacion, capacidadMaxima, edadMinimaAnios, visitantesPorDia, precioEntrada);
         this.duracionMinutos = duracionMinutos;

@@ -209,6 +209,6 @@ public void agregarJuegoInfantil(String nombre, String zona, int capacidad, int 
 }
 
 public void agregarEspectaculo(String nombre, String zona, int capacidad, int edadMin, double precio, int duracion, boolean materialPeligroso) {
-    atracciones.add(new Espectaculo("Pirotecnico", duracion, nombre, zona, capacidad, edadMin, 0, precio)); // Corregido tipoEspectaculo
+    atracciones.add(new Espectaculo("Pirotecnico", duracion, materialPeligroso, nombre, zona, capacidad, edadMin, 0, precio));
 }
 }
