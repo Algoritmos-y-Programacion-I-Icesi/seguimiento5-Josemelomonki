@@ -1,7 +1,5 @@
 package model;
 
-public class Clasificable {
-    public String getNivelRiesgo() {
-        return null;
-    }
+public interface Clasificable {
+    public String getNivelRiesgo();
 }

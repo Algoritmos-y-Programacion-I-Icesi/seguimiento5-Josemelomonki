@@ -200,4 +200,15 @@ public class Parque {
             }
         }
     }
+    public void agregarSimulador(String nombre, String zona, int capacidad, int edadMin, double precio, int estaciones, boolean anteojos) {
+    atracciones.add(new Simulador(estaciones, anteojos, nombre, zona, capacidad, edadMin, 0, precio));
+}
+
+public void agregarJuegoInfantil(String nombre, String zona, int capacidad, int edadMin, double precio, int edadMax, boolean supervision) {
+    atracciones.add(new JuegoInfantil(edadMax, supervision, nombre, zona, capacidad, edadMin, 0, precio));
+}
+
+public void agregarEspectaculo(String nombre, String zona, int capacidad, int edadMin, double precio, int duracion, boolean materialPeligroso) {
+    atracciones.add(new Espectaculo("Pirotecnico", duracion, nombre, zona, capacidad, edadMin, 0, precio)); // Corregido tipoEspectaculo
+}
 }
